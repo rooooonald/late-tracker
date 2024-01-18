@@ -1,9 +1,10 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  min-width: 250px;
+  min-height: 300px;
+  /* min-width: 250px; */
 
-  flex: 1;
+  /* flex: 1; */
 }
 
 .title-card {
