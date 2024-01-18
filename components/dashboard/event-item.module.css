@@ -1,0 +1,68 @@
+.card,
+.card-new-event {
+  height: auto;
+  padding: 20px 10px;
+  margin: 0 0 10px 0;
+
+  border-color: var(--secondary-color);
+}
+
+.card:hover,
+.card-new-event:hover {
+  background-color: var(--secondary-color) !important;
+  color: var(--primary-color);
+  transition: all 0.25s;
+}
+
+.card {
+  border-width: 1px;
+  border-style: solid;
+}
+
+.card h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card li {
+  margin-right: 20px;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.card-new-event {
+  border-width: 2px;
+  border-style: dashed;
+
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info > li {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.fade {
+  animation: fade-in 0.5s forwards normal;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

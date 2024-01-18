@@ -1,0 +1,36 @@
+.title-card {
+  border: 1px solid var(--fifth-color);
+  color: var(--fifth-color);
+}
+
+.title-card-header {
+  background-color: var(--fifth-color);
+}
+
+.container {
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.suggestion-item-panel {
+  margin: 0 5px;
+
+  color: var(--fifth-color);
+  font-size: 0.8rem;
+
+  transform: rotate(-65deg) translate(-50%, -10%);
+  transform-origin: left top;
+
+  animation: moving-text-panel 10s alternate infinite ease-in-out;
+}
+
+@keyframes moving-text-panel {
+  from {
+    transform: rotate(-65deg) translate(-30%, -20%);
+  }
+
+  to {
+    transform: rotate(-65deg) translate(-50%, -10%);
+  }
+}

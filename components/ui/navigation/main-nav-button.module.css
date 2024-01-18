@@ -1,0 +1,38 @@
+.nav-btn {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  padding: 0;
+}
+
+.nav-btn-animation {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  position: relative;
+
+
+  animation: rotate 1s linear infinite normal;
+}
+
+.nav-btn:hover .nav-btn-animation::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: var(--secondary-color);
+  border-radius: 2.5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 48px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

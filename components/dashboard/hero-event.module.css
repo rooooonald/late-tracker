@@ -1,0 +1,81 @@
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.fade {
+  animation: fade-in 0.5s forwards normal;
+}
+
+.quote-card {
+  padding: 30px;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quote-card > p {
+  margin-top: 20px;
+}
+
+.event-heading {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 2;
+}
+
+.countdown-timer {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+}
+
+.event-info {
+  flex: 3;
+  display: flex;
+  gap: 50px;
+}
+
+.event-info div {
+  margin-bottom: 30px;
+}
+
+.event-info div p {
+  font-size: 1.5rem;
+}
+
+.event-info div h2 {
+  font-size: 1rem;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .event-info {
+    display: none;
+  }
+
+  .countdown {
+    margin: 30px 0 0 0;
+    text-align: right;
+  }
+}

@@ -1,0 +1,19 @@
+.list {
+  overflow-y: scroll;
+}
+
+.list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.list::-webkit-scrollbar-track {
+  background-color: var(--primary-color);
+}
+
+.list::-webkit-scrollbar-thumb {
+  background-color: rgba(252, 15, 192, 0.5);
+}
+
+.list::-webkit-scrollbar-corner {
+  background-color: transparent;
+}

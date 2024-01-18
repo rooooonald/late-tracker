@@ -1,0 +1,83 @@
+:root {
+  --primary-color: rgb(0, 0, 0);
+  --secondary-color: rgb(252, 15, 192);
+  --third-color: rgb(230, 251, 4);
+  --fourth-color: rgb(229, 91, 60);
+  --fifth-color: rgb(51, 255, 0);
+  --sixth-color: rgb(4, 217, 255);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100dvh;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+main {
+  font-family: var(--font-gugi);
+  height: 100dvh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+p {
+  font-family: var(--font-gugi);
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  height: 30px;
+  border: none;
+  cursor: pointer;
+
+  background-color: transparent;
+  color: var(--secondary-color);
+
+  font-family: inherit;
+}
+
+input {
+  height: 30px;
+  border-radius: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 900px) {
+  main {
+    height: auto;
+  }
+}

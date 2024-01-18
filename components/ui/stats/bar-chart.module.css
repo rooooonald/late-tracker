@@ -1,0 +1,40 @@
+.wrapper {
+  width: 50px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  color: var(--fourth-color);
+
+  border: 1px dashed var(--fourth-color);
+}
+
+.bar {
+  width: 100%;
+  height: 0;
+
+  display: flex;
+  align-items: flex-end;
+
+  background-color: var(--fourth-color);
+  color: var(--primary-color);
+
+  transform-origin: bottom center;
+  animation: show-bar 0.3s ease-in-out forwards normal;
+}
+
+.percentage {
+  margin: 0 0 2px 2px;
+  font-size: 0.8rem;
+}
+
+@keyframes show-bar {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}

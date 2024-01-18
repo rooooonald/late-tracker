@@ -1,0 +1,19 @@
+.input-control {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 20px;
+}
+
+.error input {
+  border-color: var(--sixth-color);
+  color: var(--sixth-color);
+}
+
+.error label {
+  color: var(--sixth-color);
+}
+
+.error p {
+  color: var(--sixth-color);
+}

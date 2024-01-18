@@ -1,0 +1,73 @@
+.wrapper {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 100px;
+}
+
+.clock {
+  width: 100px;
+  height: 100px;
+  position: relative;
+
+  border-width: 5px;
+  border-style: solid;
+
+  animation: heartbeat 0.1s alternate infinite;
+}
+
+.hour-hand {
+  height: 20px;
+  position: absolute;
+
+  transform: translate(46px, 22px) rotate(0deg);
+  transform-origin: center bottom;
+  animation: rotate-hour-hand 1.5s linear infinite;
+
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 4px;
+}
+
+.minute-hand {
+  height: 30px;
+  position: absolute;
+
+  transform: translate(46px, 12px) rotate(0deg);
+  transform-origin: center bottom;
+  animation: rotate-minute-hand 0.5s linear infinite;
+
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 4px;
+}
+
+@keyframes rotate-hour-hand {
+  from {
+    transform: translate(46px, 22px) rotate(0deg);
+  }
+  to {
+    transform: translate(46px, 22px) rotate(360deg);
+  }
+}
+
+@keyframes rotate-minute-hand {
+  from {
+    transform: translate(46px, 12px) rotate(0deg);
+  }
+  to {
+    transform: translate(46px, 12px) rotate(360deg);
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(0.6);
+  }
+}

@@ -1,0 +1,12 @@
+.warning {
+  animation: warn 0.5s alternate-reverse infinite linear;
+}
+
+@keyframes warn {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

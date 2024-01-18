@@ -1,0 +1,16 @@
+.list {
+  width: 100%;
+  margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .list {
+    margin: 0;
+    justify-content: center;
+  }
+}

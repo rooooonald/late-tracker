@@ -1,0 +1,48 @@
+.title-card {
+  width: calc(50% - 5px);
+  height: 100%;
+
+  background-color: transparent;
+  border: 1px solid var(--secondary-color);
+}
+
+.title-card > p {
+  color: var(--secondary-color);
+}
+
+.title-card-header {
+  background-color: var(--secondary-color);
+}
+
+.info {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.info div {
+  margin-bottom: 20px;
+}
+
+.info div h2 {
+  font-size: 0.8rem;
+}
+
+.info div p {
+  font-size: 1rem;
+}
+
+.info div:nth-child(1) p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 900px) {
+  .title-card {
+    width: 100%;
+  }
+
+  .info div p {
+    font-size: 1rem;
+  }
+}
