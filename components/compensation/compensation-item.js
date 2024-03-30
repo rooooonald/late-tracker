@@ -87,7 +87,7 @@ export default function CompensationItem({ event, mode, onRefresh }) {
             onClick={() => compensatedHandler(session.user.email)}
             className={styles.button}
           >
-            <p>CLICK IF COMPENSATED</p>
+            <p>CLICK HERE IF COMPENSATED</p>
           </Button>
         )}
     </div>

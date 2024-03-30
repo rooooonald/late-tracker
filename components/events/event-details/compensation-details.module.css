@@ -23,7 +23,7 @@
 }
 
 .participant-list {
-  overflow: scroll;
+  overflow: auto;
 }
 
 .participant-tag {
